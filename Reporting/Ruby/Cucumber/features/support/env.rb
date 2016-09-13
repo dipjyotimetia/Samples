@@ -12,9 +12,9 @@ Before do |scenario|
 
   Utils::Cucumber.scenario = scenario
 
-  host = 'qatestlab.perfectomobile.com'
-  user = 'daniela@perfectomobile.com'
-  pass = 'Shelby1967'
+  host = 'My_Host.perfectomobile.com'
+  user = 'My_User'
+  pass = 'My_Pass'
 
   capabilities = {
       :platformName => 'Android',
