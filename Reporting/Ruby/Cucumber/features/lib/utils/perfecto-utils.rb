@@ -80,10 +80,9 @@ module Utils
     #
     # log a test step using scenario instance
     # scenario step name will be assigned to be reporting step description
-    def self.logStep
+    def self.logStep name
       unless @@reportiumClient.nil?
-        step_name = Utils::Cucumber.scenario.test_steps[@@currentStep].name
-        @@reportiumClient.testStep step_name
+        @@reportiumClient.testStep name
       else
         raise 'Reporting client uninitialized'
       end

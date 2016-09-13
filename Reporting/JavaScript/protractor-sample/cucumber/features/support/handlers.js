@@ -1,5 +1,10 @@
 var myHandlers = function () {
 
+    /**
+     * BeforeFeature handler.
+     * Logging feature name to browser.currentFeature.
+     * This can be used to add the feature name to reporting tags.
+     */
     this.registerHandler('BeforeFeature', (Feature, callback)=>{
         if(Feature.getName() != null){
             browser.currentFeature = Feature.getName();
